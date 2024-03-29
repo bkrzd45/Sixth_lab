@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Workoo надпись -->
+    <TextView
+        android:id="@+id/textViewWorkoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workoo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Skip надпись -->
+    <TextView
+        android:id="@+id/textViewSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="16sp"
+        android:textColor="@color/grey_600"
+        android:layout_toRightOf="@id/textViewWorkoo"
+        android:layout_marginLeft="85dp"
+        android:layout_alignBaseline="@id/textViewWorkoo"/>
+
+    <!-- Текст описания -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easily manage your tasks and establish a network of preferred on Workoo"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewWorkoo"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Картинка -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/man_image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewDescription"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Точки прокрутки -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dots_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Кнопка Get started -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get started"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/purple_700"
+        app:icon="@drawable/ic_arrow"
+        app:iconGravity="end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<!-- dots_image.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical|start">
+        <shape android:shape="oval">
+            <size android:width="16dp" android:height="16dp"/>
+            <solid android:color="#8e44ad"/>
+        </shape>
+    </item>
+    <item android:left="20dp">
+        <shape android:shape="oval">
+            <size android:width="16dp" android:height="16dp"/>
+            <solid android:color="#8e44ad"/>
+        </shape>
+    </item>
+    <item android:left="20dp">
+        <shape android:shape="oval">
+            <size android:width="16dp" android:height="16dp"/>
+            <solid android:color="#8e44ad"/>
+        </shape>
+    </item>
+</layer-list>
